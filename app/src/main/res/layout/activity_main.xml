@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.dedegunawan.quizandroid.MainActivity">
+
+    <TextView
+        android:id="@+id/soalNya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonBenarCek"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Soalnya"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonBenarCek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="cekJawabanBenar"
+        android:text="Benar" />
+
+    <Button
+        android:id="@+id/buttonSalahCek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonBenarCek"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="cekJawabanSalah"
+        android:text="Salah" />
+
+
+    <TextView
+        android:id="@+id/skorNya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/soalNya"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="10"
+        android:textSize="96sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/skorKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/skorNya"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Skor Kamu Adalah : "
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
